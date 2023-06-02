@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css_file/css_for_multiple_pages.css">
+    <link
+    rel="stylesheet"
+    media="screen and (max-width:450px)"
+    href="css_file/phone.css"
+  />
+  </head>
+  <body>
+    <!-- {% extends 'base.html' %} -->
+    <!-- {% block content %} -->
+    <div class="content-section register">
+      <form method="POST">
+        <!-- {% csrf_token %} -->
+        <fieldset class="form-group">
+          <legend class="border-bottom mb-4">Join Today</legend>
+          <!-- {{ form.as_p }} -->
+        </fieldset>
+
+        <!-- By registering, you accept the Terms of Service and Privacy Notice -->
+
+        <div class="form-group">
+          <button class="btn btn-outline-info  register_button" type="submit">Sign Up</button>
+        </div>
+      </form>
+      <div class="border-top pt-3">
+        <small class="text-muted ">
+          Already Have An Account? <a class="ml-2" href="/login">Sign In</a>
+        </small>
+      </div>
+    </div>
+    <!-- {% endblock content %} -->
+  </body>
+</html>
